@@ -1,0 +1,8 @@
+{
+  "culture": "en",
+  "texts": {
+    "Domain:PassScoreCannotBeEqualMoreThanScoreCeiling": "The pass score '{PassScore}' cannot be more than ceiling exception!",
+    "Domain:DescriptiveScoresCountMoreThanSix": "Descriptive scores count cannot be more than 6 elements! : '{DescriptiveScore}'",
+    "Domain:PassScoreCannotBeMoreThanSumQuestionScores": "Pass score provided cannot be more than sum of question scores : '{SumScores}'"
+  }
+}
