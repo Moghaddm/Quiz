@@ -24,29 +24,5 @@ namespace NovinQuiz.Modules.Quizzes.Services
 
             return passScore;
         }
-
-        public List<DescriptiveScore> IsDescriptiveScoreValid(List<DescriptiveScore> descriptiveScores)
-        {
-            Check.NotNull(descriptiveScores, nameof(descriptiveScores));
-
-            if (descriptiveScores.Count > 6 && descriptiveScores is not null)
-                throw new DescriptiveScoresCountMoreThanSixException("Domain:DescriptiveScoresCountMoreThanSix")
-                    .WithData("DescriptiveScore", nameof(descriptiveScores));
-
-            return descriptiveScores!;
-        }
-
-        public DescriptiveScore IsDescriptiveScoreValid(DescriptiveScore descriptiveScore, List<DescriptiveScore> descriptiveScores)
-        {
-            Check.NotNull(descriptiveScore, nameof(descriptiveScore));
-
-            if (descriptiveScores.Count > 6 && descriptiveScore is not null)
-                throw new DescriptiveScoresCountMoreThanSixException("Domain:DescriptiveScoresCountMoreThanSix")
-                    .WithData("DescriptiveScore", nameof(descriptiveScore));
-
-            return descriptiveScore!;
-        }
-
-       
     }
 }
