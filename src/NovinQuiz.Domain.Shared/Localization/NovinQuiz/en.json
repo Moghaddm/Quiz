@@ -3,6 +3,9 @@
   "texts": {
     "Domain:PassScoreCannotBeEqualMoreThanScoreCeiling": "The pass score '{PassScore}' cannot be more than ceiling exception!",
     "Domain:DescriptiveScoresCountMoreThanSix": "Descriptive scores count cannot be more than 6 elements! : '{DescriptiveScore}'",
-    "Domain:PassScoreCannotBeMoreThanSumQuestionScores": "Pass score provided cannot be more than sum of question scores : '{SumScores}'"
+    "Domain:PassScoreCannotBeMoreThanSumQuestionScores": "Pass score provided cannot be more than sum of question scores : '{SumScores}'",
+    "Domain:ScorePeriodCannotBeRepeatAsPerviousDescriptiveScore": "Score period '{ScorePeriod}' cannot be repeat in descriptive scores",
+    "Domain:ScorePeriodCannotBeMoreThanPerviousDescriptiveScore": "Score period '{ScorePeriod}' cannot be more that its pervious : '{PerviousScorePeriod}'",
+    "Domain:QuestionsCountCannotBeZero": "Questions in quiz '{Quiz}' cannot be empty. add minimum questions count to quiz for create!"
   }
 }
