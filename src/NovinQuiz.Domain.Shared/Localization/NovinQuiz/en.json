@@ -8,6 +8,8 @@
     "Domain:ScorePeriodCannotBeMoreThanPerviousDescriptiveScore": "Score period '{ScorePeriod}' cannot be more that its pervious : '{PerviousScorePeriod}'.",
     "Domain:QuestionsCountCannotBeZero": "Questions in quiz '{Quiz}' cannot be empty. add minimum questions count to quiz for create!",
     "Domain:CorrectAnswerCannotBeMoreThanOne": "Corrects answers exist in choices cannot be more that one!",
-    "Domain:ShortAnswerChoicesCannotHaveDistinctAnswers": "Short answer choices cannot have distinct answers."
+    "Domain:ShortAnswerChoicesCannotHaveDistinctAnswers": "Short answer choices cannot have distinct answers.",
+    "Domain:BlankAnswerSectionLengthCannotBeZeroOrLess": "Blank answer section langth cannot be zero or less : Start Index : '{StartIndex}' , End Index : '{EndIndex}'",
+    "Domain:BlankAnswerSectionCannotHaveAllTheTextInQuestion": "Blank answer section cannot have all the text question. give better answer!"
   }
 }
