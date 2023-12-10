@@ -8,8 +8,13 @@
     "Domain:ScorePeriodCannotBeMoreThanPerviousDescriptiveScore": "Score period '{ScorePeriod}' cannot be more that its pervious : '{PerviousScorePeriod}'.",
     "Domain:QuestionsCountCannotBeZero": "Questions in quiz '{Quiz}' cannot be empty. add minimum questions count to quiz for create!",
     "Domain:CorrectAnswerCannotBeMoreThanOne": "Corrects answers exist in choices cannot be more that one!",
-    "Domain:ShortAnswerChoicesCannotHaveDistinctAnswers": "Short answer choices cannot have distinct answers.",
+    "Domain:ChoicesCannotHaveDistinctAnswers": "Question choices cannot have distinct answers.",
     "Domain:BlankAnswerSectionLengthCannotBeZeroOrLess": "Blank answer section langth cannot be zero or less : Start Index : '{StartIndex}' , End Index : '{EndIndex}'",
-    "Domain:BlankAnswerSectionCannotHaveAllTheTextInQuestion": "Blank answer section cannot have all the text question. give better answer!"
+    "Domain:BlankAnswerSectionCannotHaveAllTheTextInQuestion": "Blank answer section cannot have all the text question. give better answer!",
+    "Domain:QuestionChoicesCountCannotBeMoreThanEight": "Question choices count cannot be more than 8.",
+    "Domain:AttachmentsCannotHaveDistinctAnswers": "Attachments cannot have distinct items as all choices.",
+    "Domain:MultipleChoiceChanceItemsCountCannotBeLessThanTwo": "Multiple choice chance items count cannot be less than 2.",
+    "Domain:SumChoiceScoresMustBeEqualToQuestionScore": "Sum of choice scores must be equal to question score!",
+    "Domain:SumChoiceScoresMustBeEqualToSumChoicesNegativePoint": "Sum of choice scores must be equal to question negative point! sum scores : '{SumScores}' , negative point sum scores : '{NegativePoints}'"
   }
 }

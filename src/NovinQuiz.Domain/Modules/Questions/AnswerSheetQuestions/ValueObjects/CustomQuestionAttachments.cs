@@ -9,12 +9,14 @@ using Volo.Abp.Domain.Values;
 
 namespace NovinQuiz.Modules.Questions.AnswerSheetQuestions.ValueObjects
 {
-    public record CustomQuestionAttachments(Attachment? photo, Attachment? recordAudio)
+    public record CustomQuestionAttachments
     {
-        public Attachment Photo { get; private set; } = photo;
+        public CustomQuestionAttachments(Attachment? photo, Attachment? recordAudio) => (Photo, RecordAudio) = (photo, recordAudio);
+
+        public Attachment? Photo { get; private set; }
         public void SetPhoto(Attachment? photo) => Photo = photo;
 
-        public Attachment RecordAudio { get; private set; } = recordAudio;
+        public Attachment? RecordAudio { get; private set; } 
         public void SetRecordAudio(Attachment? recordAudio) => RecordAudio = recordAudio;
     }
 }

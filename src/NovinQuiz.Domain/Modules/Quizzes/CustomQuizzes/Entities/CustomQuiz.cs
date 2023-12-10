@@ -1,4 +1,4 @@
-﻿using NovinQuiz.Modules.Questions.CustomQuestions.Entities;
+﻿using NovinQuiz.Modules.Questions.CustomQuestions.Common.Entities;
 using NovinQuiz.Modules.Quizzes.Aggregates;
 using NovinQuiz.Modules.Quizzes.Enums;
 using NovinQuiz.Modules.Quizzes.Exceptions;
