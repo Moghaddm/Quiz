@@ -26,7 +26,7 @@ namespace NovinQuiz.Modules.Quizzes
         public byte PassScore { get; private set; }
         public byte ScoreCeiling { get; private set; }
         public byte NegativePoint { get; private set; }
-        public ParticipatePeriodDateTime ParticipatePeriod { get; private set; }
+        public ParticipatePeriod ParticipatePeriodTime { get; private set; }
         public MultipleParticipateSettings MultipleParticipateSettings { get; private set; }
         public IList<DescriptiveScore> DescriptiveScores { get; private set; }
         public GeneralQuizSettings GeneralSettings { get; private set; }
