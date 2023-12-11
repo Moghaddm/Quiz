@@ -10,36 +10,28 @@ using Volo.Abp.Domain.Services;
 
 namespace NovinQuiz.Modules.Quizzes.Services
 {
-    public class DescriptiveScoreManagerService : DomainService
+    public sealed class DescriptiveScoreManagerService : DomainService
     {
-        public List<DescriptiveScore> CheckDescriptiveScoresValid(List<DescriptiveScore> descriptiveScores)
+        public static IList<DescriptiveScore> CheckDescriptiveScoresValid(IList<DescriptiveScore> descriptiveScores)
         {
             Check.NotNull(descriptiveScores, nameof(descriptiveScores));
 
-            if (descriptiveScores.Count > 6)
+            int descriptiveScoresCount = descriptiveScores.Count;
+
+            if (descriptiveScoresCount > 6)
                 throw new DescriptiveScoresCountMoreThanSixException("Domain:DescriptiveScoresCountMoreThanSix")
                     .WithData("DescriptiveScore", nameof(descriptiveScores));
 
-            for (int i = 1; i <= descriptiveScores.Count - 1; i++)
+            for (int i = 1; i <= descriptiveScoresCount - 1; i++)
             {
                 if (descriptiveScores[i].ScorePeriod == descriptiveScores[i - 1].ScorePeriod)
                     throw new ScorePeriodCannotBeRepeatAsPerviousDescriptiveScoreException("Domain:ScorePeriodCannotBeRepeatAsPerviousDescriptiveScore")
-                    {
-                        Data =
-                        {
-                            {"ScorePeriod", descriptiveScores[i].ScorePeriod}
-                        }
-                    };
+                        .WithData("ScorePeriod", descriptiveScores[i].ScorePeriod);
 
                 else if (descriptiveScores[i].ScorePeriod < descriptiveScores[i - 1].ScorePeriod)
                     throw new ScorePeriodCannotBeMoreThanPerviousDescriptiveScoreException("Domain:ScorePeriodCannotBeMoreThanPerviousDescriptiveScore")
-                    {
-                        Data =
-                        {
-                            {"ScorePeriod", descriptiveScores[i].ScorePeriod},
-                            {"PerviousScorePeriod", descriptiveScores[i - 1].ScorePeriod}
-                        }
-                    };
+                        .WithData("ScorePeriod", descriptiveScores[i].ScorePeriod)
+                        .WithData("PerviousScorePeriod", descriptiveScores[i - 1].ScorePeriod);
             }
 
             return descriptiveScores!;

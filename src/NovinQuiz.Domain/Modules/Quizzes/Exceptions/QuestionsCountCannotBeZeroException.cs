@@ -7,7 +7,7 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Quizzes.Exceptions
 {
-    public sealed class ScorePeriodCannotBeMoreThanPerviousDescriptiveScoreException(string code) : BusinessException(code)
+    public sealed class QuestionsCountCannotBeZeroException(string code) : BusinessException(code)
     {
 
     }

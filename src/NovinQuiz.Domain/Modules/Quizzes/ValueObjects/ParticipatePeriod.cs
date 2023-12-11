@@ -7,5 +7,5 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Quizzes.ValueObjects
 {
-    public record ParticipatePeriod(DateOnly StartPeriodDate, DateOnly StartPeriodTime, DateOnly EndPeriodDate, DateOnly EndPeriodTime);
+    public sealed record ParticipatePeriod(DateOnly StartPeriodDate, TimeOnly StartPeriodTime, DateOnly EndPeriodDate, TimeOnly EndPeriodTime);
 }
