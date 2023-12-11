@@ -7,7 +7,7 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Quizzes.Exceptions
 {
-    public class DescriptiveScoresCountMoreThanSixException(string code) : BusinessException(code)
+    public sealed class DescriptiveScoresCountMoreThanSixException(string code) : BusinessException(code)
     {
 
     }

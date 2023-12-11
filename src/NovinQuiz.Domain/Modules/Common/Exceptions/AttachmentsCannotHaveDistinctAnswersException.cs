@@ -7,7 +7,7 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Common.Exceptions
 {
-    public class AttachmentsCannotHaveDistinctAnswersException(string code) : BusinessException(code)
+    public sealed class AttachmentsCannotBeRepeatOnAnswersException(string code) : BusinessException(code)
     {
 
     }

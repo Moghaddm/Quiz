@@ -7,7 +7,7 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Quizzes.Exceptions
 {
-    public class PassScoreCannotBeMoreThanSumQuestionScoresException(string code) : BusinessException(code)
+    public sealed class PassScoreCannotBeMoreThanSumQuestionScoresException(string code) : BusinessException(code)
     {
 
     }

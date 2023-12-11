@@ -7,7 +7,7 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Quizzes.Exceptions
 {
-    public class PassScoreCannotBeEqualMoreThanScoreCeilingException(string code) : BusinessException(code)
+    public sealed class PassScoreCannotBeEqualMoreThanScoreCeilingException(string code) : BusinessException(code)
     {
 
     }

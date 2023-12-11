@@ -7,7 +7,7 @@ using Volo.Abp;
 
 namespace NovinQuiz.Modules.Quizzes.Exceptions
 {
-    public class ScorePeriodCannotBeRepeatAsPerviousDescriptiveScoreException(string code) : BusinessException(code)
+    public sealed class ScorePeriodCannotBeRepeatAsPerviousDescriptiveScoreException(string code) : BusinessException(code)
     {
 
     }
