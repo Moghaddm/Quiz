@@ -8,7 +8,7 @@ using Volo.Abp.Domain.Services;
 
 namespace NovinQuiz.Modules.Quizzes.Services
 {
-    public sealed class QuestionCustomPropertiesManagerService : DomainService
+    public sealed class QuestionPropertiesManagerService : DomainService
     {
         public static float CheckCanSetQuestionScore(CustomQuiz quiz, float score)
         {
@@ -25,22 +25,5 @@ namespace NovinQuiz.Modules.Quizzes.Services
 
             return score;
         }
-
-        //public TQuestion CheckSumScore<TQuestion>(CustomQuiz quiz) where TQuestion : CustomQuestion
-        //{
-
-        //    int sumScore = quiz.Questions.Sum(q => q.Score);
-
-        //    if (sumScore + quiz.Questions.Score > passScore)
-        //        throw new PassScoreCannotBeMoreThanSumQuestionScoresException("Domain:PassScoreCannotBeMoreThanSumQuestionScores")
-        //        {
-        //            Data =
-        //            {
-        //                { "SumScores", sumScore }
-        //            }
-        //        };
-
-        //    return question;
-        //}
     }
 }

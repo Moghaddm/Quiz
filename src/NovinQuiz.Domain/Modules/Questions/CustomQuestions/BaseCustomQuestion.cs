@@ -32,7 +32,7 @@ namespace NovinQuiz.Modules.Questions.CustomQuestions
         public float Score
         {
             get => _score;
-            set => _score = QuestionCustomPropertiesManagerService.CheckCanSetQuestionScore(quiz, score);
+            set => _score = QuestionPropertiesManagerService.CheckCanSetQuestionScore(quiz, score);
         }
         public short? TimeLimit { get; set; } = timeLimit;  // according to minutes 
         public bool ShowGuideInResultPage { get; private set; } = showGuideInResultPage;
