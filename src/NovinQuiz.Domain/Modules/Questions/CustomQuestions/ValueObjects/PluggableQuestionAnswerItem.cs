@@ -1,4 +1,4 @@
-﻿using NovinQuiz.Enums.Questions.CustomQuestions.Pluggable;
+﻿using NovinQuiz.Enums.Questions.CustomQuestions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
